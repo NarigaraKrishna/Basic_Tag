@@ -1,34 +1,31 @@
 <html>
     <head>
         <style>
-                body{
-                    background-image: url(img/download.jpg);
-                    background-size:cover;
-
-                }
-                
+            .main{
+                display: flex;
+            }
+            #gradient{
+                height: 400px;
+                width: 400px;
+                margin: 5px;
+            }
+            .linear-gradient{
+                background-image:linear-gradient(red,green);
+            }
+            .Radial-gradient{
+                background-image:radial-gradient(red,green,blue);
+            }
+            .conic-gradient{
+                background-image: conic-gradient(red,green,yellow);
+           }
         </style>
+        <title>gradient</title>
     </head>
     <body>
-        <form>
-            <center>
-                <table>
-                    <tr>
-                        <td colspan="3">Login Form</td>
-                    </tr>
-                    <tr>
-                        <td>Name:</td>
-                        <td colspan="3"><input type="text" placeholder="Enter Your Name"></td>
-                    </tr>
-                    <tr>
-                        <td>Password:</td>
-                        <td colspan="3"><input type="password"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input type="button" value="submit">&nbsp;<input type="button" value="Reset"></td>
-                    </tr>
-                </table>
-            </center>
-        </form>
+        <div class="main">
+        <div class="linear-Gradient" id="gradient"><h1>linear-Gradient</h1></div>
+        <div class="Radial-Gradient" id="gradient"><h1>Radial-Gradient</h1></div>
+        <div class="conic-Gradient" id="gradient"><h1>conic-Gradient</h1></div>
+        </div>
     </body>
 </html>

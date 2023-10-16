@@ -1,37 +1,49 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            body{
-                height: 100vh;
-                width: 100vw;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            div{
-                background-color: skyblue;
-                text-align: center;
-                font-size: 50px;
-                border: 5px solid burlywood ;
-                display: none;
-            }
-        @media screen and(min-width:320px) and(max-width:767px) {
-            body{background-color: orange;}
-            .sm{display: block;}
-        }
-        @media screen and(min-width:768px) and(max-width:992px) {
-            body{background-color: blue;}
-            .md{display: block;}
-        }
-        </style>
+            <style>
+                .l1{
+                    background-color: brown;
+                    color: aliceblue;
+                    padding: 10 0 10 30;
+                }
+                .l2{
+                    list-style-image: url(image/download\ \(6\).jpg);
+                    color: brown;
+                }
+                .ol{
+                    color: brown;
+                    list-style: lower-alpha;
+                }
+                li{
+                    font-size: 20px;
+                    font-weight: bolder;
+                }
+            </style>
     </head>
     <body>
-        <div class="sm">MOBILE</div>
-        <div class="md">TABLATES</div>
-        <div class="id">LAPTOP</div>
-        <div class="xl">LARGE SCREEN </div>
-        <div class="xxl">EXTRA LARGE SCREEN</div>
+        <h2>Govt.Courses</h2>
+        <ul class="l1">
+            <li>Govt.CCC</li>
+            <ol>
+                <li>Basic</li>
+                <li>MS Office</li>
+                <ul>
+                    <li>MS Powerpoint</li>
+                    <li>MS Word</li>
+                    <li>MS Excel</li>
+                </ul>
+                <li>Internet</li>
+                <li>Fundamental</li>
+            </ul>
+        </ol>
+        <ul class="l2">
+            <li>Tally Accounting</li>
+        </ul>
+        <ol class="ol">
+            <li>What is Accounting</li>
+            <li>English Typing</li>
+            <li>Tally Prime</li>
+            <li>GST</li>
+        </ol>
     </body>
 </html>

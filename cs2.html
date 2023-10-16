@@ -1,75 +1,30 @@
 <html>
     <head>
         <style>
-            body{
-                background-image: url(img/download\ \(1\).jpg);
-                background-size: cover;
-                color: white;
-                font-size: 20px;
+            .main{
+                display: flex;
             }
-            table,th,td{
-                border: 1px white;
-                border-collapse: collapse;
+            #gradient{
+                height: 400px;
+                width: 400px;
+                margin: 5px;
             }
-            table{
-                height: 300px;
-                width: 1400px; 
-                margin-top: 50px; 
-                color: black;        
+            .linear-gradient{
+                background-image:linear-gradient(red,green);
             }
-            th{
-                background-color: yellow;
-                border: 3px white;
+            .lefttoright{
+                background-image:linear-gradient(to right,red,green);
             }
-            td{
-                font-size: 15px;
-                text-align:center;
-                background-color: white;
-                font-family: Arial, Helvetica, sans-serif;
+            .diagnol{
+                background-image:linear-gradient(to bottom right,green,yellow)
             }
         </style>
     </head>
     <body>
-        <center>
-            
-            <table>
-                <tr>
-                    <th>CODE</th>
-                    <th>STOCK</th>
-                    <th>CAP</th>
-                    <TH>INCH</TH>
-                    <TH>BOX TYPE</TH>
-                </tr>
-                <tr>
-                    <td>CES-9000</td>
-                    <td>50mt</td>
-                    <td>9mm</td>
-                    <td>1/2*</td>
-                    <td>Kangal/coil*</td>
-                </tr>
-                <tr>
-                    <td>CES-9000</td>
-                    <td>50mt</td>
-                    <td>9mm</td>
-                    <td>1/2*</td>
-                    <td>Kangal/coil*</td>
-                </tr>
-                <tr>
-                    <td>CES-9000</td>
-                    <td>50mt</td>
-                    <td>9mm</td>
-                    <td>1/2*</td>
-                    <td>Kangal/coil*</td>
-                </tr>
-                <tr>
-                    <td>CES-9000</td>
-                    <td>50mt</td>
-                    <td>9mm</td>
-                    <td>1/2*</td>
-                    <td>Kangal/coil*</td>
-                </tr>
-            </table><br><br><br>
-            Responsive Table
-        </center>
+        <div class="main"> 
+            <div class="linear-Gradient" id="gradient"><h1>Default</h1></div>
+            <div class="lefttoright" id="gradient"><h1>left to right</h1></div>
+            <div class="diagnol" id="gradient"><h1>Diagonal</h1></div>
+        </div>
     </body>
 </html>
